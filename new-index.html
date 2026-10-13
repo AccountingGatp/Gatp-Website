@@ -289,11 +289,12 @@ footer p{max-width:320px;margin-top:16px}
   .mock-wrap{max-width:640px}
 }
 @media (max-width:900px){
-  .burger{display:block}
+  .burger{display:block;order:3;margin-left:auto}
   .menu{position:fixed;top:78px;left:12px;right:12px;flex-direction:column;align-items:stretch;gap:0;padding:8px 20px 20px;border-radius:18px;background:#fff;box-shadow:var(--shadow-lg);transform-origin:top right;transform:scale(.96);opacity:0;visibility:hidden;transition:transform 150ms ease-out,opacity 150ms ease-out,visibility 0s linear 150ms}
   .menu.open{transform:none;opacity:1;visibility:visible;transition:transform 220ms var(--ease),opacity 200ms ease-out,visibility 0s}
   .menu a.l{padding:14px 4px;font-size:17px;color:var(--ink);border-radius:0;border-bottom:1px solid var(--line)}
-  .menu .btn{margin:16px 0 0;min-height:48px}
+  .menu .btn{margin:16px 0 0;min-height:48px;width:100%}
+  .menu a.l{display:flex;width:100%}
 }
 @media (max-width:680px){
   .svc,.r2,.pods,.fg{grid-template-columns:1fr}
